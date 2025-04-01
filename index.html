@@ -8,31 +8,47 @@
 </head>
 <body class="bg-[var(--bg-twice-color)]">
 
-<header class="header">
-  <div class="container-header">
-  <div class="header-item">
-    <a href="#home"><img src="/public/icons/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Home-buttn"></a>
-    <a href="#integrant"><img src="/public/icons/group_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Integrantes-button" ></a>
-    <a href="#video"><img src="/public/icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Videos-button" ></a>
+<header class="header w-full h-10 bg-transparent backdrop-blur-2xl">
+  <div class="container-header w-full h-full flex justify-between items-center  ">
+  <div class="header-item flex justify-between items-center ml-1 gap-2">
+
+    <a href="#home" class="shadow-md hover:animate-scale border border-solid border-white bg-transparent rounded-lg p-1">
+      <img src="/public/icons/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Home-buttn">
+    </a>
+
+    <a href="#integrant" class="shadow-md hover:animate-scale border border-solid border-white bg-transparent rounded-lg p-1 ">
+      <img src="/public/icons/group_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Integrantes-button" >
+    </a>
+
+    <a href="#video" class="shadow-md hover:animate-scale border border-solid border-white bg-transparent rounded-lg p-1">
+      <img src="/public/icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Videos-button" >
+    </a>
+
   </div>
-  <div class="header-item"><img src="public/icons/Twice_logo_icon____-removebg-preview.webp" alt="icon-logo-twice"></div>
-  <div class="header-item">
-    <div class="icon-container">
-      <a href="#">
-        <img src="/public/icons/Github_light.svg" alt="Github-icon-page">
+  <div class="header-item  flex justify-between items-center">
+    <img src="public/icons/Twice_logo_icon____-removebg-preview.webp" alt="icon-logo-twice" class="h-15">
+  </div>
+
+  <div class="header-item  flex justify-between items-center gap-2 mr-1 mt-1.5">
+      <a href="https://github.com/mapas48/Twice-ladingPage" target="_blank" class=" hover:animate-scale">
+        <img src="/public/icons/Github_light.svg" alt="Github-icon-page" class="h-8">
       </a>
-    </div>
-    <div class="icon-container">
-      <a href="#">
-        <img src="public/icons/instagram.svg" alt="instagram-icon-page">
+      <a href="https://www.instagram.com/_johnsanchez_g/" target="_blank" class=" hover:animate-scale">
+        <img src="public/icons/instagram.svg" alt="instagram-icon-page" class="h-8 rounded-lg">
       </a>
-    </div>
   </div>
 </div>
 </header>
+<main>
+  <div class="twice-container flex flex-col items-center justify-center">
+    <img src="/public/img/Twice_Kpop_Stickers_for_Sale-removebg-preview.webp" class="logo max-w-3xl animate-wiggle ">
+  </div>
+  <div class="integrant-container">
+    
+  </div>
+</main>
 
 
-
-  <script src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
