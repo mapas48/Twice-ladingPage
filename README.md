@@ -32,9 +32,6 @@ Bienvenido al repositorio de la **Landing Page de Twice**. Este proyecto se encu
 
 Si deseas contribuir, eres bienvenido/a. Puedes abrir un issue o enviar un pull request con mejoras y sugerencias.
 
-## 📞 Contacto
-
-Si tienes dudas o sugerencias, puedes contactarme a través de [tu correo o red social].
 
 ---
 ✨ *Gracias por tu interés en este proyecto.* ✨
