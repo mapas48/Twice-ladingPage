@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
   <link rel="stylesheet" href="/src/style.css">
   <title>Twice Page</title>
 </head>
-<body class="bg-[var(--bg-twice-color)]">
+<script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+<body class="bg-[var(--bg-twice-color)] h-dvh">
 
 <header class="header w-full h-10 bg-transparent backdrop-blur-2xl">
   <div class="container-header w-full h-full flex justify-between items-center  ">
@@ -39,16 +41,111 @@
   </div>
 </div>
 </header>
-<main>
-  <div class="twice-container flex flex-col items-center justify-center">
-    <img src="/public/img/Twice_Kpop_Stickers_for_Sale-removebg-preview.webp" class="logo max-w-3xl animate-wiggle ">
+<main class="h-full w-full">
+  <div class="container-main flex flex-col items-center justify-center w-full h-full ">
+  <div class="twice-container flex flex-col items-center justify-center w-full h-full translate-y-[-70px]">
+    <img src="/public/img/Twice_Kpop_Stickers_for_Sale-removebg-preview.webp" class="logo max-w-3xl animate-wiggle w-fit h-fit ">
   </div>
-  <div class="integrant-container">
-    
+  <div class="integrant-container grid grid-cols-[400px_400px_400px] grid-rows-[fit-content_fit-content_fit-content] place-content-center m-auto">
+    <h1 class="bg-gradient-to-r from-pink-500 via-pink-400 to-purple-400 bg-clip-text text-transparent text-3xl col-start-2 row-start-1 place-content-center text-center font-bold">Integrantes de Twice</h1>
+    <div class="img-container w-96 h-96 object-contain shadow hover:scale-105 transition-all">
+      <img src="/public/integrantesimg/momo.webp" class="img-int w-full h-full rounded-sm">
+    </div>
+    <div class="description-container ml-3 bg-white rounded-sm flex flex-col justify-evenly items-center gap-1 shadow-xl hover:scale-105 transition-all">
+      <h2 class="name text-xl font-bold">Momo</h2>
+      <p class="lives text-xl font-bold">📍 Vive con Nayeon.</p>
+      <p class="food text-xl font-bold">🍜 Le encantan los fideos y el pan 🥖</p>
+      <p class="description text-center text-xl font-bold">👑 Reina del baile, con movimientos poderosos y precisos. Originaria de Japón</p>
+    </div>
+    <button class="btn-int w-full place-items-center col-start-2 row-start-2  mt-2.5 rounded-2xl  ">
+      <img src="/public/icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+      class="bg-black p-5 w-18 h-18 rounded-2xl shadow hover:scale-105 transition-all ">
+    </button>
   </div>
+</div>
 </main>
+<section id="video" class="section-vid h-full w-full">
+  <div class="section-container flex items-center justify-center flex-col">
+  <h2 class="text-3xl font-bold ">✨<span class="bg-gradient-to-r from-pink-500 via-pink-400 to-purple-400 bg-clip-text text-transparent text-3xl font-bold">Canciones de Twice</span>✨</h2>
+  
+  <dialog class="AddmoreVid">
+    <div>
+      <div class="header">
+        <h3>
+          Añade un nuevo video de Twice
+        </h3>
+        <button class="btnClose">
+          <img src="/public/icons/close_35dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg" alt="CloseButton">
+        </button>
+      </div>
+
+      <div>
+        <p>
+          Ingresa el link de YouTube
+        </p>
+        <input type="text" class="input-link" placeholder="https://www.youtube.com/watch?v=c4P-MLvH8T8&ab_channel=EladioCarrion-Topic">
+        <input type="button" value="Enviar :3" class="input-send-vid">
+        <p class="succesprocessText"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="video-container  grid auto-rows-auto  grid-cols-3 gap-3  max-w-5xl mt-7 auto-cols-auto ">
+
+    <div class="bg-white p-2 rounded-sm shadow">
+      <lite-youtube videoid="ePpPVE-GGJw" playlabel="Play: Crayon Physics Deluxe - Trailer HD" class="rounded-sm border-gray-400 border-solid border-3"></lite-youtube>
+      <h3 class="text-lg font-black">Twice TT</h3>
+      <div class="dateVid flex gap-2">
+       <p class="font-bold">8 años</p>
+      <p class="font-bold">697M</p>
+      </div>
+      </div>
+
+      <div class="bg-white p-2 rounded-sm shadow">
+        <lite-youtube videoid="V2hlQkVJZhE" playlabel="Play: Crayon Physics Deluxe - Trailer HD" class="rounded-sm border-gray-400 border-solid border-3"></lite-youtube>
+        <h3 class="text-lg font-black">Twice Likey</h3>
+        <div class="dateVid flex gap-2">
+         <p class="font-bold">8 años</p>
+        <p class="font-bold">639M</p>
+        </div>
+        </div>
+
+        <div class="bg-white p-2 rounded-sm shadow">
+          <lite-youtube videoid="3ymwOvzhwHs" playlabel="Play: Crayon Physics Deluxe - Trailer HD" class="rounded-sm border-gray-400 border-solid border-3"></lite-youtube>
+          <h3 class="text-lg font-black">Twice Feel Special</h3>
+          <div class="dateVid flex gap-2">
+           <p class="font-bold">5 años</p>
+          <p class="font-bold">528M</p>
+          </div>
+          </div>
 
 
-  <script type="module" src="/src/main.js"></script>
+            <div class="bg-white p-2 rounded-sm shadow">
+              <lite-youtube videoid="kOHB85vDuow" playlabel="Play: Crayon Physics Deluxe - Trailer HD" class="rounded-sm border-gray-400 border-solid border-3"></lite-youtube>
+              <h3 class="text-lg font-black">Twice Fancy</h3>
+              <div class="dateVid flex gap-2">
+               <p class="font-bold">5 años</p>
+              <p class="font-bold">657M</p>
+              </div>
+              </div>
+
+              <div class="bg-white p-2 rounded-sm shadow">
+                <lite-youtube videoid="i0p1bmr0EmE" playlabel="Play: Crayon Physics Deluxe - Trailer HD" class="rounded-sm border-gray-400 border-solid border-3"></lite-youtube>
+                <h3 class="text-lg font-black">Twice What is Love?</h3>
+                <div class="dateVid flex gap-2">
+                 <p class="font-bold">6 años</p>
+                <p class="font-bold">840M</p>
+                </div>
+                </div>
+
+                <button class="button-open place-items-center">
+                  <img src="/public/icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="addButton" class="p-3 bg-black rounded-2xl w-15 h-auto shadow-2xl hover:scale-105 transition-all">
+                </button>
+                
+              
+</div>
+</section>
+
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
