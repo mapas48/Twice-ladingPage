@@ -4,14 +4,16 @@
 
 *{
   font-family: "Poppins", sans-serif;
+  scroll-behavior:smooth;
 }
+
 
 
 @theme {
   --bg-twice-color: #EDBACB;
   --border-color-linear:linear-gradient(to right, white, navy);
   --animate-wiggle: fade-out 3s ease-in-out infinite;
-
+  --grid-col:grid-template-columns: repeat(2,450px);
   @keyframes fade-out {
     0%{
       opacity: 1;
@@ -23,4 +25,9 @@
     }
   }
 }
+
+@grid {
+  
+}
+
 
